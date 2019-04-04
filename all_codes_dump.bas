@@ -1,5 +1,31 @@
 
 
+Sub pull()
+
+For x = 1 To ActiveWorkbook.Sheets.Count
+    Cells(x, 3) = Sheets(x).Name
+    Cells(x, 4) = Sheets(x).Range("E25").Value
+    Cells(x, 5) = Sheets(x).Range("F25").Value
+Next x
+
+End Sub
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+tree /f > tree.txt
+
+dir . /s /a:-d > out.txt
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 Sub showAllSheets()
 
 Dim numSheets As Integer
